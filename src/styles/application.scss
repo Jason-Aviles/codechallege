@@ -1,20 +1,23 @@
 @import '_reset';
+html { font-size:100%; }
 body{background: #9db1b6;  
     }
 
 ul{ display: flex;  flex-wrap:wrap;
     text-align:center;
     margin:auto;
+    width:25%;
+    height:auto;
     li{  width:100%;
         padding:1rem;
-        max-width:25%;
+        display: flex;  flex-wrap:wrap;
         border:1px solid rgba(236, 226, 255, 0.666);
         margin:2rem auto;
         height:auto;
         a{text-decoration: none; font-size: 1.5rem;
             h1{margin-bottom:1rem; cursor: text!important;color:black  }
-            img{width:40%;margin:auto;margin-bottom:.2rem;height:40%;  }
-            button{background:transparent ;
+            img{ max-width: 100%;margin:auto;margin-bottom:.2rem;height:auto;  }
+            button{background:transparent ; 
             margin-left:1rem;
         text-transform:uppercase;
     border-radius:10px; cursor: pointer !important; &:hover {
@@ -27,7 +30,7 @@ ul{ display: flex;  flex-wrap:wrap;
 @media only screen and ( max-width:768px ){	
     li{
         width:100%;
-        max-width:40%;
+        
         border:1px solid red;
     }
 }
@@ -59,3 +62,42 @@ ul{ display: flex;  flex-wrap:wrap;
 }
 
 
+@media only screen and (min-resolution: 117dpi) and (max-resolution: 119dpi), only screen and (min-resolution: 131dpi) and (max-resolution: 133dpi), only screen and (min-resolution: 145dpi) and (max-resolution: 154dpi), only screen and (min-resolution: 162dpi) and (max-resolution: 164dpi), only screen and (min-resolution: 169dpi) {
+    #touch_logo {
+       display: inherit;
+    }
+    #mouse_logo {
+       display: none;
+    }
+ ul{width:40%}
+ img{ max-width: 100%;margin:auto;margin-bottom:.2rem;height:auto;  }
+}
+@media only screen and (min-resolution: 165dpi) and (max-resolution: 168dpi), only screen and (min-resolution: 155dpi) and (max-resolution: 160dpi), only screen and (min-resolution: 134dpi) and (max-resolution: 144dpi), only screen and (min-resolution: 120dpi) and (max-resolution: 130dpi), only screen and (max-resolution: 116dpi) {
+    #touch_logo {
+       display: none;
+    }
+    #mouse_logo {
+       display: inherit;
+    }
+  /* Your click-specific css goes here */
+}
+@media (min-width: 541px){
+  /* Big view stuff goes here. */
+}
+@media (max-width: 540px) and (min-width: 400px){
+  /* Smaller view stuff goes here. */
+}
+@media (max-width: 399px){
+
+     
+            a{ font-size: .5rem;
+                h1{margin-bottom:1rem; cursor: text!important;color:black  }
+                img{ max-width: 100%;margin:auto;margin-bottom:.2rem;height:40%;  }
+                button{background:transparent ; 
+                margin-left:1rem;
+            text-transform:uppercase;
+        border-radius:10px; cursor: pointer !important; &:hover {
+            color:rgb(243, 243, 242);
+        } }
+            }
+        }
