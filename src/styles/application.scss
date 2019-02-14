@@ -4,7 +4,7 @@ body{background: #9db1b6;
     }
 
 ul{ display: flex;  flex-wrap:wrap;
-    text-align:center;
+    text-align:center;flex-direction: column;
     margin:auto;
     width:25%;
     height:auto;
